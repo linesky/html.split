@@ -16,9 +16,16 @@ for n in splits:
         print("\t",end="")
     for ta in tags:
         ta=ta.strip()
+        if counter==0:
+            if len(ta)>0:
+               print(ta)
+        else:
+            varsn=ta.split(" ")
+            for varn in varsn:
+                varn=varn.strip()
+                if len(varn)>0:
+                    print(varn)
         
-        if len(ta)>0:
-            print(ta)
         counter+=1
         
     
